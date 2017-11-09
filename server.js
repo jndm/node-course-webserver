@@ -36,14 +36,20 @@ app.set('view engine', 'hbs');
 
 app.get('/', (req, res) => {
 	res.render('home.hbs', {
-		pageTitle: 'Home Page',
+		pageTitle: 'Home',
 		welcomeMessage: 'Welcome to test template hbs v1.'
 	});
 });
 
 app.get('/about', (req, res) => {
 	res.render('about.hbs', {
-		pageTitle: 'About Page'
+		pageTitle: 'About'
+	});
+});
+
+app.get('/projects', (req, res) => {
+	res.render('projects.hbs', {
+		pageTitle: 'Projects'
 	});
 });
 
